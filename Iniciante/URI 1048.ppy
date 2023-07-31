@@ -1,0 +1,18 @@
+sal = float(input())
+if sal <= 400.00:
+    perc = 15
+elif sal <= 800.00:
+    perc = 12
+elif sal <= 1200.00:
+    perc = 10
+elif sal <= 2000.00:
+    perc = 7
+else:
+    perc = 4
+
+reaj = sal * (perc/100)
+sal_novo = sal + reaj
+
+print(f'Novo salario: {sal_novo:.2f}')
+print(f'Reajuste ganho: {reaj:.2f}')
+print(f'Em percentual: {perc} %')
